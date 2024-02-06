@@ -1,0 +1,17 @@
+<div class="container container-fluid">
+  <div class="col">
+    <div class="row">
+      <span>{{annonce.title}}</span>
+      <img src="https://i.seadn.io/gae/D1VVAjaZEtmZ8-ZsQRLWzhtY8qT8lxcFtI9e0jp0OcRu2fflWKGoYy6qHLPoBc2-faK8e_H0HGy10qKN_aRY4hlttkFUgKeVh9wSFs8?auto=format&dpr=1&w=3840"/>
+      <span>{{annonce.long_desc}}</span>
+      <span>{{annonce.date_creation}}</span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="row">
+      <span>commantaires</span>
+    </div>
+  </div>
+</div>
+<h1>Do you realy want to delete this annonce</h1>
+<button class="btn btn-danger" (click)="deleteAnnonce()">Delete</button>

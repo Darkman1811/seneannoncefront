@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;" *ngFor="let annonce of annonceListe">
+  <img src="https://i.seadn.io/gae/D1VVAjaZEtmZ8-ZsQRLWzhtY8qT8lxcFtI9e0jp0OcRu2fflWKGoYy6qHLPoBc2-faK8e_H0HGy10qKN_aRY4hlttkFUgKeVh9wSFs8?auto=format&dpr=1&w=3840" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{annonce.title}}</h5>
+    <p class="card-text">{{annonce.long_desc}}</p>
+
+    <a (click)="gotoDetails(annonce)" class="btn btn-primary">Details</a>
+    <a (click)="gotoDelete(annonce)" class="btn btn-danger">Delete</a>
+    <a (click)="gotoUpdate(annonce)" class="btn btn-dark">update</a>
+  </div>
+</div>

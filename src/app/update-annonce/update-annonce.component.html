@@ -1,0 +1,15 @@
+<h1>Modifier Annonce</h1>
+<form>
+  <div class="mb-3">
+    <label for="title" class="form-label">Titre</label>
+    <input type="text" class="form-control" id="title" placeholder="title"  [(ngModel)]="annonce.title" name="title">
+  </div>
+  <div class="mb-3">
+    <label for="long_desc" class="form-label">Description</label>
+    <textarea class="form-control" id="long_desc" rows="3" placeholder="Description Longue" [(ngModel)]="annonce.long_desc" name="long_desc"></textarea>
+  </div>
+  <div>
+    <button class="btn btn-primary" (click)="modifierAnnonce()">Modifier</button>
+    <button class="btn btn-light">Annuler</button>
+  </div>
+</form>
